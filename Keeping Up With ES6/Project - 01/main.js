@@ -1,5 +1,4 @@
-
-function User(first, last = null, email, password) {
+function User(first, last, email, password) {
     this.first = first;
     this.last = last;
     this.email = email;
@@ -44,7 +43,7 @@ function App() {
         this.user.completed[list].splice(this.user.completed[list].indexOf(item), 1);
         this.updateTask();
         this.modifyUsers();
-    }
+    };
     this.delete = function(elem, type) {
         if (type === "list" && confirm("Are You Sure You Want to Delete\n" + elem.parentElement.firstElementChild.innerHTML)) {
             delete this.user.lists[elem.parentElement.firstElementChild.innerHTML];
@@ -57,11 +56,11 @@ function App() {
             this.modifyUsers();
             this.updateTask();
         }
-    }
+    };
     this.modifyUsers = function() {
         localStorage.users = JSON.stringify(this.users);
         console.log("Data in Memory Updated @" + new Date());
-    }
+    };
     this.addListeners = function() {
         document.getElementById("welcome-signup-btn").addEventListener("click", () => {
             this.toggle("welcome", "register", "screen");
@@ -235,7 +234,7 @@ function App() {
         nodes[2].value = this.user.email;
         nodes[3].value = this.user.password;
         nodes[4].value = this.user.password;
-    }
+    };
 
     this.checkLogin = function() {
         console.log("LOGIN ATTEMPT");
@@ -335,7 +334,7 @@ function App() {
                 return inputs;
             }
         }
-    }
+    };
 }
 
 let app = new App();
