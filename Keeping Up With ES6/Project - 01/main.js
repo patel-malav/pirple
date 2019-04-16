@@ -1,3 +1,4 @@
+
 function User(first, last = null, email, password) {
     this.first = first;
     this.last = last;
@@ -277,7 +278,7 @@ function App() {
                 return reportErr("password", "Password Must be more than 8 characters.")
             } else if (inputs[4] && inputs[4].length < 8) {
                 return reportErr("retype", "Password Must be more than 8 characters.");
-            } else if (inputs[3] && inputs[4] && inputs[4] !== inputs[3]) {
+            } else if (inputs[4] !== inputs[3]) {
                 return reportErr("retype", "Password's Must Match.");
             } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputs[2])) {
                 return reportErr("email", "Email is not Appropriate.");
