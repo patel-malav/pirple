@@ -1,0 +1,55 @@
+<!-- /*
+ * Title : Assignment 07
+ * File Name : index.html
+ * Location : P:\Pirple\Assignment - 07\index.html
+ * Type : Pirple Assignment 07
+ * Author : Malav
+ * Data : 07/03/2019 (dd/mm/yyyy)
+ * Description : Javascript DOM Manipulation Demo.
+ */ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <style media="screen">
+            #rectangleWrapper {
+                padding: 50px 50px 0px 50px;
+            }
+            span {
+                display: block;
+                width: 200px;
+                height: 150px;
+            };
+        </style>
+    </head>
+    <body onload="displayIDs();">
+        <h1>My Disliked Colour's</h1>
+        <h2>These Colours are ugly by my standards</h2>
+        <div id="rectangleWrapper">
+            <div><span class="rect" id="rectangle01" style="background-color:#a93226;"></span><p>color : #a93226</p></div>
+            <div><span class="rect" id="rectangle02" style="background-color:#cb4335;"></span><p>color : #cb4335</p></div>
+            <div><span class="rect" id="rectangle03" style="background-color:#884ea0;"></span><p>color : #884ea0</p></div>
+            <div><span class="rect" id="rectangle04" style="background-color:#7d3c98;"></span><p>color : #7d3c98</p></div>
+            <div><span class="rect" id="rectangle05" style="background-color:#0ff000;"></span><p>color : #0ff000</p></div>
+            <div><span class="rect" id="rectangle06" style="background-color:#2471a3;"></span><p>color : #2471a3</p></div>
+            <div><span class="rect" id="rectangle07" style="background-color:#2e86c1;"></span><p>color : #2e86c1</p></div>
+            <div><span class="rect" id="rectangle08" style="background-color:#2ecc71;"></span><p>color : #2ecc71</p></div>
+            <div><span class="rect" id="rectangle09" style="background-color:#95a5a6;"></span><p>color : #95a5a6</p></div>
+            <div><span class="rect" id="rectangle10" style="background-color:#0000ff;"></span><p>color : #0000ff</p></div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        const displayIDs = function() {
+            console.log("HERE ARE THE RECTANGLE ID's ..");
+            const ids = document.getElementById("rectangleWrapper").getElementsByTagName("span");
+            for(const tag of ids) {
+                console.log(tag.id);
+            }
+        }
+        const title = document.createElement("title");
+        title.innerText = document.body.querySelector("h1").innerText;
+        const head = document.head;
+        head.appendChild(title);
+    </script>
+</html>

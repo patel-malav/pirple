@@ -1,0 +1,68 @@
+/*
+===
+USER STYLE
+===
+*/
+#welcome-screen, #login-screen, #register-screen, #home-screen {
+    text-align: center;
+}
+
+#welcome-screen * {
+    margin: 50px 0;
+}
+
+#welcome-screen h3 {
+    margin: 20px 0;
+}
+
+#login-screen label, #register-screen label, #settings-view label {
+    margin: 20px 0;
+    width: 57%;
+}
+
+#register-screen .name, #settings-view .name {
+    width: 28%;
+}
+
+#register-screen>div {
+    margin: 20px 0;
+}
+
+#welcome-screen button, #login-screen button, #register-screen button, #settings-view button {
+    width: 40%;
+    margin: 10px 5px;
+}
+
+#user-view button:last-child {
+    padding: 10px 20px;
+    width: 20%;
+    margin-left: 5%;
+}
+
+#user-view button:last-child:hover {
+    background: #ff4444;
+    border-color: #cc0000 !important;
+}
+
+#user-name, #list-view>h2, #task-view>h2 {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+#list-view small, #task-view small {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#list-view span, #task-view span {
+    cursor: pointer;
+}
+
+#list-view .btn-plus {
+    margin-left: 20%;
+}
+
+#task-view .btn-plus {
+    margin-left: 5%;
+}

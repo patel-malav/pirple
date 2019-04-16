@@ -1,0 +1,53 @@
+<!-- /*
+ * Title : Assignment 08
+ * File Name : index.html
+ * Location : P:\Pirple\Assignment - 08\index.html
+ * Type : Pirple Assignment 08
+ * Author : Malav
+ * Data : 08/03/2019 (dd/mm/yyyy)
+ * Description : Tic Tac Toe Game Html part.
+ */ -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="clearfix">
+        <h1>Tic - Tac - Toe</h1>
+        <h4>Creator : Malav</h4>
+        <div id="Configure">
+            <h1>Enter Names And Click Play Button</h1>
+            <label for="p1">Player 1 : </label>
+            <input type="text" name="p1" id="playerone_name">
+            <br>
+            <label for="p2">Player 2 : </label>
+            <input type="text" name="p2" id="playertwo_name">
+            <br>
+            <button type="button" name="play_button" onclick="activateGame();">Play</button>
+        </div>
+        <table id="game_board" hidden>
+            <tbody>
+                <tr>
+                    <td><div id="0"></div></td>
+                    <td><div id="1"></div></td>
+                    <td><div id="2"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="3"></div></td>
+                    <td><div id="4"></div></td>
+                    <td><div id="5"></div></td>
+                </tr>
+                <tr>
+                    <td><div id="6"></div></td>
+                    <td><div id="7"></div></td>
+                    <td><div id="8"></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+</html>

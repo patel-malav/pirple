@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- style="display:none;" -->
+        <div class="page" id="welcome-screen" style="display:none;">
+            <h1>Malav's To-Do List App</h1>
+            <hr>
+            <h2>Made Exclusively By The Not So Great Malav P Patel</h2>
+            <h3>Add Tasks</h3>
+            <h3>Edit Tasks</h3>
+            <h3>New List ...etc</h3>
+            <button class="btn" type="button" id="welcome-signup-btn">Sign up</button>
+            <button class="btn" type="button" id="welcome-login-btn">Login in</button>
+        </div>
+
+        <div class="page" id="login-screen" style="display:none;">
+            <h1>Login To My To-Do List</h1>
+            <hr>
+            <label class="field a-field a-field_a3 page__field">
+                <input class="field__input a-field__input" type="text" placeholder="e.g. patelmalav64@gmail.com" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">E-mail</span>
+                </span>
+            </label>
+            <br>
+            <label class="field a-field a-field_a2 page__field">
+                <input class="field__input a-field__input" type="password" placeholder="e.g Password" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">Password</span>
+                </span>
+            </label>
+            <br>
+            <button class="btn" type="button" id="login-submit-btn">Login</button>
+            <div id="login-error" style="display:none;">
+                <h5 class="error">Wrong Email or Password</h5>
+            </div>
+        </div>
+
+        <div class="page" id="register-screen" style="display:none;">
+            <h1>Register To My To-Do List</h1>
+            <hr>
+            <label class="field a-field a-field_a2 page__field name">
+                <input class="field__input a-field__input" type="text" placeholder="e.g. Malav" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">First Name</span>
+                </span>
+            </label>
+            <span class="error" id="register-name-error" style="display:none;"> Name Required</span>
+            <label class="field a-field a-field_a2 page__field name">
+                <input class="field__input a-field__input" type="text" placeholder="e.g. Patel">
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">Last Name</span>
+                </span>
+            </label>
+            <br>
+            <label class="field a-field a-field_a3 page__field">
+                <input class="field__input a-field__input" type="text" placeholder="e.g. patelmalav64@gmail.com" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">E-mail</span>
+                </span>
+            </label>
+            <span class="error" id="register-email-error" style="display:none;">E-mail Required</span>
+            <br>
+            <label class="field a-field a-field_a2 page__field">
+                <input class="field__input a-field__input" type="password" placeholder="e.g. Password" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">Password</span>
+                </span>
+            </label>
+            <span class="error" id="register-password-error" style="display:none;">Password Required</span>
+            <br>
+            <label class="field a-field a-field_a2 page__field">
+                <input class="field__input a-field__input" type="password" placeholder="e.g. Again" required>
+                <span class="a-field__label-wrap">
+                    <span class="a-field__label">Retype</span>
+                </span>
+            </label>
+            <span class="error" id="register-retype-error" style="display:none;">Enter Password Again</span>
+            <br>
+            <div>
+                <input type="checkbox" value="accepted" required>
+                <span class="a-field__label">I agree to Terms & Conditons.</span>
+                <span class="error" id="register-accept-error" style="display:none;"> Plz Accept T&C.</span>
+            </div>
+            <br>
+            <button class="btn" type="button" id="register-submit-btn">Register</button>
+        </div>
+
+        <div class="page" id="home-screen" style="display:none;">
+            <div id="user-view" style="display:none;">
+                <h1 id="user-name">Default Name</h1>
+                <button class="btn-plus" type="button" id="user-account-settings">Account Settings</button>
+                <button class="btn" type="button" id="user-logout-btn">Log out</button>
+            </div>
+
+            <div id="settings-view" style="display:none;">
+                <h1>Setting</h1>
+                <hr>
+                <label class="field a-field a-field_a2 page__field name">
+                    <input class="field__input a-field__input" type="text" placeholder="e.g. Malav">
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">First Name</span>
+                    </span>
+                </label>
+                <span class="error" id="settings-name-error" style="display:none;">ERROR</span>
+                <label class="field a-field a-field_a2 page__field name">
+                    <input class="field__input a-field__input" type="text" placeholder="e.g. Patel">
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">Last Name</span>
+                    </span>
+                </label>
+                <br>
+                <label class="field a-field a-field_a3 page__field">
+                    <input class="field__input a-field__input" type="text" placeholder="e.g. patelmalav64@gmail.com">
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">E-mail</span>
+                    </span>
+                </label>
+                <span class="error" id="settings-email-error" style="display:none;">ERROR</span>
+                <br>
+                <label class="field a-field a-field_a2 page__field">
+                    <input class="field__input a-field__input" type="password" placeholder="e.g. Password">
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">Password</span>
+                    </span>
+                </label>
+                <span class="error" id="settings-password-error" style="display:none;">ERROR</span>
+                <br>
+                <label class="field a-field a-field_a2 page__field">
+                    <input class="field__input a-field__input" type="password" placeholder="e.g. Again">
+                    <span class="a-field__label-wrap">
+                        <span class="a-field__label">Retype</span>
+                    </span>
+                </label>
+                <span class="error" id="settings-retype-error" style="display:none;">ERROR</span>
+                <br>
+                <button class="btn" type="button" id="settings-submit-btn">Update</button>
+                <button class="btn" type="button" id="settings-cancel-btn">Cancel</button>
+            </div>
+
+            <div id="list-view" style="display:none;">
+                <h2>My Lists</h2>
+                <button class="btn-plus" type="button" id="list-add-btn">Add New</button>
+                <hr>
+                <ul class="list"></ul>
+            </div>
+
+            <div id="task-view" style="display:none;">
+                <h2>Generic List Name</h2>
+                <button class="btn-plus" type="button" id="task-add-btn">Add New</button>
+                <button class="btn-plus" type="button" id="task-back-btn">Back</button>
+                <hr>
+                <ul class="list"></ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

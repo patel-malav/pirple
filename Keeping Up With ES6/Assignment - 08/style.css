@@ -1,0 +1,32 @@
+/*
+ * Title : Assignment 08
+ * File Name : style.css
+ * Location : P:\Pirple\Assignment - 08\style.css
+ * Type : Pirple Assignment 08
+ * Author : Malav
+ * Data : 08/03/2019 (dd/mm/yyyy)
+ * Description : Tic Tac Toe Game css part.
+ */
+
+td div {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+img {
+    margin: 30px;
+}
+
+td {
+    margin: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+#Configure {
+    width: fit-content;
+    margin: auto;
+}
