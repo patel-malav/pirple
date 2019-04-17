@@ -1,7 +1,7 @@
 /*
  * Title : Assignment - 10
  * File Name : index.html
- * Location : P:\Pirple\Project - 01\Assignment - 10.html
+ * Location : P:\Pirple\Keeping Up With ES6\Assignment - 10\destructuring.js
  * Type : Pirple Assignment
  * Author : Malav
  * Data : 16/04/2019 (dd/mm/yyyy)
@@ -10,7 +10,7 @@
 
 /* Destructure an Object
  * We destructure an object when we know about the keys present in the object
- * and we have an object to destructure we can not destructure array using
+ * and we have an object to destructure, we can not destructure array using
  * object destructuring syntax or any other data type.
  */
 
@@ -43,7 +43,7 @@ if(priya instanceof Person && sam instanceof Person) {
  * We destructure an Array when we know about return type and have the variables
  * to assign values to the array. Key Difference between destructuring Object
  * & Array is Array does not need to know the keys present in the array as array
- * does not have any key.
+ * does not have any key but it total values present in the array or position of those values.
  */
 
 // Example of Destructuring an array.
@@ -89,7 +89,7 @@ let hitlist = {
     }
 }
 
-let {authour, date, targets:[first, second, , , fifth], friendly: { marvel: { payment, currency, clients: [mainClient], pending: [target]}}} = hitlist;
+let {authour, date, targets:[first, second, , , fifth], friendly: { dc: { payment, currency, clients: [mainClient], pending: [target]}}} = hitlist;
 
 console.log(`\n\nExample of Complex Destructuring.\n\n`);
 
