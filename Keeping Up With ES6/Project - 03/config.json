@@ -1,0 +1,18 @@
+{
+    "hayaat": {
+        "basement": -1,
+        "count": 2,
+        "floors": 9,
+        "lobby": 0,
+        "penthouse": 10,
+        "elevatorSettings": [{
+            "id": "A",
+            "basement": true,
+            "penthouse": false
+        }, {
+            "id": "B",
+            "basement": false,
+            "penthouse": true
+        }]
+    }
+}
