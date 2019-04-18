@@ -22,3 +22,25 @@
             }]
         }
     }
+
+    {
+        **Add a Building**
+        let hayaat = new Building(settings.hayaat);
+
+        **Set Name of the building**
+        hayaat.setName = "hayaat";
+
+        **This Adds The Elevators to a building**
+        for (let i = 0; i < settings.hayaat.count; i++) {
+            hayaat.addElevators(settings.hayaat.elevatorSettings[i]);
+        }
+
+        **Interface to add outside button for elevator**
+        hayaat.buttonPressed("Interger Value of Floor no", "Direction is up/dwn");
+
+        **Get Building Elevators**
+        let elevators = hayaat.getElevators;
+
+        **Interface to simulate button pressed inside Elevator**
+        elevator["elevator number"].buttonPressed("floor number / button type = stop/alarm/open door/close door")
+    }
