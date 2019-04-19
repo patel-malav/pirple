@@ -23,7 +23,6 @@ function loginUser(url, name, pwd) {
         else
             return fakeAuth(obj.collected[0], obj.collected[1], obj.collected[2]);
     });
-    return temp;
 }
 
 function fakeAuth(url, name, pwd) {
@@ -55,7 +54,4 @@ function fakeInput(inputs, collected, time) {
 }
 
 console.log('Welcome to Ftp connect.');
-loginUser('www.filezilla.com', 'malav', 'admin').then((msg) => {
-    if (msg === 'OK')
-        console.log('Do FTP STUFF NOW\nAaaaaaaaaaaaaaaaaaa\nAhahaaahahahahhahahaha');
-}).catch((msg) => console.log(msg));
+let temp = loginUser('www.filezilla.com', 'malav', 'admin');
