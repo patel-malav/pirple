@@ -7,8 +7,21 @@ class Vehicle {
         this.needsMaintenance = false;
         this.tripsSinceMaintenance = 0;
     }
+    setMake(make) {
+        this.make = make;
+    }
+    setModel(model) {
+        this.model = model;
+    }
+    setYear(year) {
+        this.year = year;
+    }
+    setWeight(weight) {
+        this.weight = weight;
+    }
     repair() {
         this.tripsSinceMaintenance = 0;
+        this.needsMaintenance = false;
         console.log(`The Car is Repaired & trips are : ${this.tripsSinceMaintenance}`);
     }
     printDetails() {
@@ -24,7 +37,7 @@ class Car extends Vehicle {
         this.isDriving = false;
     }
     drive() {
-        if (this.needsMaintenance === 100) console.log(`Your Car ${this.model} needs repair.`);
+        if (this.needsMaintenance) console.log(`Your Car ${this.model} needs repair.`);
         this.isDriving = true;
         this.tripsSinceMaintenance += 1;
     }
@@ -89,8 +102,8 @@ tesla.printDetails();
 const airbus = new Plane("A", "380", 2016, 5543);
 
 let x;
-for(x = 0; x < 105; x++) {
-    if(!airbus.fly())
+for (x = 0; x < 105; x++) {
+    if (!airbus.fly())
         break;
     airbus.land();
 }
