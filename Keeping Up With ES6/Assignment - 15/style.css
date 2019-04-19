@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin: 50px auto;
+}
+
+#controls {
+    display: flex;
+}
+
+#controls>* {
+    height: 40px;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}

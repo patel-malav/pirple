@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="">
+        <h1>The Not So Awesome Currency Converter</h1>
+        <h3>~ Developed to learn by <a href="https://github.com/patel-malav">Malav Patel</a></h3>
+        <br>
+        <br>
+        <h3>To Day's Rates are 1 <span id="display-from-currency"></span> : <span id="display-amt">??</span> <span id="display-to-currency">Currency</span></h3>
+        <br>
+        <br>
+    </div>
+    <div id="controls" class="">
+        <select id="cur-from-name"></select>
+        <input id="cur-from-value" type="number" value="0">
+        <select id="cur-to-name"></select>
+        <input id="cur-to-value" type="number" value="0" readonly>
+        <button id="cur-convert" type="button">Convert</button>
+        <button id="cur-refresh" type="button">Refresh</button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
