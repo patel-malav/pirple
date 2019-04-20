@@ -1,3 +1,9 @@
+/* Author: Malav P. Patel
+ * GitHub: http://github.com/patel-malav
+ * Title: Currency Coneversion Project.
+ * Topic: Priple/Assignment - 15
+ */
+
 let url = 'https://openexchangerates.org/api/',
     apiKey = '7fa3556ea5804da58697a66074759fac',
     currency = 'currencies.json',

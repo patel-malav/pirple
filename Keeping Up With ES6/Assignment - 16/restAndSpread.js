@@ -1,3 +1,9 @@
+/* Author: Malav P. Patel
+ * GitHub: http://github.com/patel-malav
+ * Title: rest and spread demo.
+ * Topic: Priple/Assignment - 16
+ */
+
 // So, Rest collects all the arguments and put them into a one array that we
 // loop over.
 

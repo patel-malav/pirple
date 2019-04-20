@@ -1,0 +1,40 @@
+<!-- /* Author: Malav P. Patel
+ * GitHub: http://github.com/patel-malav
+ * Title: Alarm System using Browser Notification API.
+ * Topic: Priple/Assignment - 17
+ */ -->
+ 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Alarm</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Alarm Application - Do not reload...</h1>
+        <div class="container">
+            <div id="controls">
+                <input type="text" id="title" placeholder="Alarm Label">
+                <input type="number" id="sec" placeholder="Seconds">
+                <input type="number" id="min" placeholder="Minutes">
+                <input type="number" id="hrs" placeholder="Hours">
+                <input type="number" id="day" placeholder="Days">
+                <button type="button" id="add-alarm">Add alarm</button>
+            </div>
+            <div id="completed">
+                <h2>Completed</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div id="pending">
+                <h2>Upcoming</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="alarm.js"></script>
+</html>
