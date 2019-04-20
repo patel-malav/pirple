@@ -1,6 +1,6 @@
 /* Author: Malav P. Patel
  * GitHub: http://github.com/patel-malav
- * Title: Currency Coneversion Project.
+ * Title: Currency Conversion Project
  * Topic: Priple/Assignment - 15
  */
 
@@ -47,14 +47,14 @@ window.onload = function() {
                     y = obj.rates[toName.value];
                 toValue.value = (fromValue.value * y) / x;
 
-                displayCurrency.innerHTML = toName.value;
+                displayCurrencyTo.innerHTML = toName.value;
                 displayAmount.innerHTML = y / x;
             })
             .catch(err => {
                 alert('Api Call Was Faliure.');
                 console.log('error: ' + err);
                 displayAmount.innerHTML = '??';
-                displayCurrency.innerHTML = 'Currency';
+                displayCurrencyTo.innerHTML = 'Currency';
             });
     });
 

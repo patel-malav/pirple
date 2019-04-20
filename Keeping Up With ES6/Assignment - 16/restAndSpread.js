@@ -7,10 +7,10 @@
 // So, Rest collects all the arguments and put them into a one array that we
 // loop over.
 
-function calculateAndSqaure(x, y, ...rest) {
+function calculateAndSqaure(x, y, ...5) {
     let total = x + y;
     if (rest.length !== 0)
-        rest.reduce((total, ele) => total + ele, 0);
+        total += rest.reduce((x, ele) => x + ele, 0);
     return total * total;
 }
 
