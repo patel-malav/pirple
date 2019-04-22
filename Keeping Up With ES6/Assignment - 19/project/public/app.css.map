@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"public/app.css","sourcesContent":[".brunch {\r\n  font-family: -apple-system, Sans-Serif;\r\n  text-align: center;\r\n  font-size: 24pt;\r\n  color: #3f894a;\r\n}\r\n"]}
