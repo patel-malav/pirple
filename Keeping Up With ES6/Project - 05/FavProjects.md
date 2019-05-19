@@ -7,4 +7,4 @@
 5. [p5 play] (https://github.com/molleindustria/p5.play/) (A game development lib.)
 
 ## I would like to focus on p5.js because its a thing I keep returning back to after react, vue to make
-## some stuff that is not an full fledged application i.e. to visualize sorting, make funckey greeting card maker etc. 
+## some stuff that is not an full fledged application i.e. to visualize sorting, make funky greeting card maker etc.
